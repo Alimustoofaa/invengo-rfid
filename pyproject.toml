@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "invengo-rfid"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python library and CLI for Invengo RAIN RFID (UHF EPC Gen2) fixed readers over TCP"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -39,7 +39,10 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/Alimustoofaa/invengo-rfid"
+"Source Code" = "https://github.com/Alimustoofaa/invengo-rfid"
 Issues = "https://github.com/Alimustoofaa/invengo-rfid/issues"
+Changelog = "https://github.com/Alimustoofaa/invengo-rfid/releases"
+Documentation = "https://github.com/Alimustoofaa/invengo-rfid#readme"
 
 [project.scripts]
 invengo-scan = "invengo.cli:main"
