@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invengo-rfid"
+version = "0.1.0"
+description = "Python library and CLI for Invengo RAIN RFID (UHF EPC Gen2) fixed readers over TCP"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Alimustoofaa" }]
+keywords = [
+    "rfid",
+    "uhf-rfid",
+    "rain-rfid",
+    "epc",
+    "gen2",
+    "iso-18000-6c",
+    "invengo",
+    "reader",
+    "iot",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/Alimustoofaa/invengo-rfid"
+Issues = "https://github.com/Alimustoofaa/invengo-rfid/issues"
+
+[project.scripts]
+invengo-scan = "invengo.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
